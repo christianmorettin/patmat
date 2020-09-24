@@ -26,6 +26,8 @@ class HuffmanSuite {
   @Test def `string2chars hello world`: Unit =
     assertEquals(List('h', 'e', 'l', 'l', 'o', ',', ' ', 'w', 'o', 'r', 'l', 'd'), string2Chars("hello, world"))
 
+  @Test def `list chars the number of times it occur`: Unit =
+    assertEquals(times(List('a', 'b', 'a')), List(('a', 2), ('b', 1)))
 
   @Test def `make ordered leaf list for some frequency table (15pts)`: Unit =
     assertEquals(List(Leaf('e',1), Leaf('t',2), Leaf('x',3)), makeOrderedLeafList(List(('t', 2), ('e', 1), ('x', 3))))
